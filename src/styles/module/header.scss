@@ -1,0 +1,24 @@
+@import '../utils/main.utils';
+.header {
+    height: 600px;
+    background: url('../../img/bg-header.svg') no-repeat;
+    background-size: cover;
+    @include flex(row,
+    center,
+    center);
+    .container-x {
+        @include flex(row,
+        space-between,
+        center);
+    }
+}
+
+.header-text-content {
+    .h1 {
+        margin-bottom: 25px;
+        max-width: 617px;
+    }
+    .subtitle {
+        color: rgba(255, 255, 255, 0.79);
+    }
+}

@@ -1,16 +1,17 @@
+@import './vars.scss';
+@import './mixin.scss';
 * {
     padding: 0;
     margin: 0;
     border: 0;
-    transition: 0.5s;
 }
 
 ::-moz-selection {
-    background-color: rgba(112, 248, 202, 0.4784313725);
+    background-color: rgba(255, 131, 108, 0.4784313725);
 }
 
 ::selection {
-    background-color: rgba(112, 248, 202, 0.4784313725);
+    background-color: rgba(255, 131, 108, 0.4784313725);
 }
 
 *,
@@ -42,6 +43,7 @@ html {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    font-family: 'Nunito', sans-serif;
 }
 
 button,
@@ -87,4 +89,28 @@ h6 {
     font-weight: 400;
     padding: 0;
     margin: 0;
+}
+
+.container-x {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.h1 {
+    @include font(40px, 900, 55px, $COLOR__WHITE);
+}
+
+.h2 {
+    @include font(30px, 900, 41px, $COLOR__RED);
+}
+
+.subtitle {
+    @include font(20px, 400, 27px, rgba(0, 0, 0, 0.38));
 }
