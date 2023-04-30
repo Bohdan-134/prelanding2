@@ -18,10 +18,12 @@
         center);
         input,
         select {
+            background-color: white;
             width: 300px;
             height: 50px;
             border-radius: 50px;
             background-color: $COLOR__WHITE;
+            transition: .3s;
         }
         input,
         label {
@@ -94,5 +96,33 @@
             27px,
             $COLOR__WHITE);
         }
+    }
+}
+
+.shake-horizontal {
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes shake-horizontal {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+    80% {
+        transform: translateX(8px);
+    }
+    90% {
+        transform: translateX(-8px);
     }
 }

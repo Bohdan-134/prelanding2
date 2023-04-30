@@ -3,7 +3,8 @@ export const contentModal = {
     falseBox: 'На жаль, ви нічого не виграли',
     trueBox: 'Вітаємо! Ви виграли пилосос дайсон',
     falseForm: 'Заповніть, будь ласка, форму',
-    boxEnd: 'У вас закінчилися спроби'
+    boxEnd: 'У вас закінчилися спроби',
+    formEnd: 'Ви вже надіслали відповіді на запитання'
 }
 
 function createModal(type) {
