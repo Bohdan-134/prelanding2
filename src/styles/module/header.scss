@@ -29,6 +29,11 @@
             @include flex(column,
             null,
             center);
+            .img-wrapp {
+                svg {
+                    height: 200px;
+                }
+            }
         }
     }
     .header-text-content {
