@@ -156,3 +156,16 @@ h6 {
         }
     }
 }
+
+@media (max-width:1100px) {
+    .container-x,
+    .container {
+        padding: 0 40px;
+    }
+    .h1 {
+        @include font(30px, 900, 45px, $COLOR__WHITE);
+    }
+    .h2 {
+        @include font(25px, 900, 36px, $COLOR__RED);
+    }
+}

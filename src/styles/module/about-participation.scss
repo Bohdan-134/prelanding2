@@ -27,3 +27,13 @@
         }
     }
 }
+
+@media (max-width:1100px) {
+    .conditions-list {
+        .conditions-item {
+            .subtitle {
+                text-align: center;
+            }
+        }
+    }
+}
