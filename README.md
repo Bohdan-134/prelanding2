@@ -5,7 +5,7 @@
 ## Links
 <b>Figma: </b><a href="https://www.figma.com/file/esNqs7mB4ZmhRjm7q7hMqy/Untitled?node-id=0%3A1&t=4kaPMfuyKEnO5tvO-1">PreLanding</a>
 <br>
-<b>Website: </b><a href="https://prelanding2.vercel.app/">HOTEL</a>
+<b>Website: </b><a href="https://prelanding2.vercel.app/">PreLanding</a>
 
 ## Preprocessor's
 - pug
