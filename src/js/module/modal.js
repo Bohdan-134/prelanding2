@@ -1,3 +1,4 @@
+import { removeAnimationBox } from './open-box.js';
 export const contentModal = {
     formText: 'Ви успішно відправили форму, тепер відкрийте подарункову коробку',
     falseBox: 'На жаль, ви нічого не виграли',
@@ -16,6 +17,7 @@ function createModal(type) {
 }
 
 export function closeModal(e) {
+    removeAnimationBox();
     const modalWrap = document.querySelector('.modal-wrapp');
     const click = e.composedPath().includes(document.querySelector('div.modal'));
     if (!click) modalWrap.remove();
