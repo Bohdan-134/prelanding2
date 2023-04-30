@@ -18,7 +18,6 @@ form.addEventListener('submit', function(event) {
     if (!validateName(nameInput.value.trim())) {
         event.preventDefault();
         addShakeHorizontal(nameInput);
-        console.log(nameInput);
         return false
     }
     if (!selectInput.value) {

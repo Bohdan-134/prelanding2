@@ -1,19 +1,19 @@
 section.questions.pt-100
     .container
-        h2.h2 Дайте відповідь на три простих питання:
+        h2.h2(data-aos="fade-up") Дайте відповідь на три простих питання:
         form#form(data-send="false")
-            .form-group.i-name
+            .form-group.i-name(data-aos="fade-right")
                 label(for='question1') Ваше имя:
                 input#question1(type='text' name='name' placeholder="Ім'я")
-            .form-group.i-select
+            .form-group.i-select(data-aos="fade-left")
                 label(for='question3') Як часто ви прибираєтеся вдома?
                 select#question2(name='cleaning-frequency')
                     option(value='1') Раз в день
                     option(value='2') Раз на тиждень
                     option(value='3') Рідше ніж один раз на тиждень
-            .form-group.i-mail  
+            .form-group.i-mail(data-aos="fade-right")
                 label(for='question2') Ваш e-mail:
                 input#question3(type='email' name='email' placeholder="email")
-            button(type='submit')#send
+            button(type='submit' data-aos="fade-up-left")#send
                 include ../../img/blot-blue-x.svg
                 span.send-title Відправити
