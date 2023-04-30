@@ -1,0 +1,60 @@
+@import '../utils/main.utils.scss';
+.box {
+    padding-bottom: 30px;
+    h2 {
+        margin-bottom: 50px;
+    }
+    .container {
+        text-align: center;
+    }
+}
+
+.box-list {
+    @include flex(row, space-between, center);
+    .box-item {
+        svg {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            path {
+                fill: $COLOR__BLUE;
+            }
+        }
+    }
+}
+
+#open-box {
+    position: relative;
+    margin-top: 65px;
+    width: 235px;
+    height: 91px;
+    background-color: transparent;
+    cursor: auto;
+    .open-box-title {
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        @include font(20px, 500, 27px, $COLOR__WHITE);
+    }
+    svg {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        path {
+            cursor: pointer;
+            transition: .3s;
+        }
+    }
+}
+
+.remainder {
+    margin-top: 30px;
+    display: block;
+    @include font(15px, 400, 20px, rgba(0, 0, 0, 0.71));
+    strong {
+        @include font(15px, 900, 20px, $COLOR__RED);
+    }
+}

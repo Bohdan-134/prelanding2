@@ -1,0 +1,29 @@
+@import '../utils/main.utils.scss';
+.about-participation {
+    .container {
+        .about-participation__subtitle {
+            margin: 14px 0 50px;
+            text-align: center;
+        }
+    }
+}
+
+.conditions-list {
+    margin-top: 50px;
+    @include flex(row, space-between, center);
+    .conditions-item {
+        @include flex(column, null, center);
+        .conditions-item-img-wrapp {
+            margin-bottom: 10px;
+            width: 100px;
+            height: 100px;
+            @include flex(row, center, center);
+        }
+        .conditions-item-img-wrapp__orange {
+            background: url('../../img/blot-orange.svg') no-repeat;
+        }
+        .conditions-item-img-wrapp__blue {
+            background: url('../../img/blot-blue.svg') no-repeat;
+        }
+    }
+}

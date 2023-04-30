@@ -1,17 +1,19 @@
-section.questions
+section.questions.pt-100
     .container
         h2.h2 Дайте відповідь на три простих питання:
-        form.form
-            .form-group
+        form#form
+            .form-group.i-name
                 label(for='question1') Ваше имя:
-                input#question1(type='text' name='name' required)
-            .form-group
-                input#question2(type='email' name='email' required)
-                label(for='question2') Ваш e-mail:
-            .form-group
+                input#question1(type='text' name='name' placeholder="Ім'я")
+            .form-group.i-select
                 label(for='question3') Як часто ви прибираєтеся вдома?
-                select#question3(name='cleaning-frequency' required)
+                select#question2(name='cleaning-frequency')
                     option(value='1') Раз в день
                     option(value='2') Раз на тиждень
                     option(value='3') Рідше ніж один раз на тиждень
-            button(type='submit') Відправити
+            .form-group.i-mail  
+                label(for='question2') Ваш e-mail:
+                input#question3(type='email' name='email' placeholder="email")
+            button(type='submit')#send
+                include ../../img/blot-blue-x.svg
+                span.send-title Відправити

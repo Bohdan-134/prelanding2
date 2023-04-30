@@ -1,0 +1,98 @@
+@import '../utils/main.utils.scss';
+.questions {
+    .h2 {
+        margin-bottom: 50px;
+    }
+}
+
+#form {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background: url('../../img/blot-orange-x.svg') no-repeat;
+    background-size: 100% 100%;
+    .form-group {
+        position: absolute;
+        @include flex(row,
+        null,
+        center);
+        input,
+        select {
+            width: 300px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: $COLOR__WHITE;
+        }
+        input,
+        label {
+            @include font(20px,
+            500,
+            27px,
+            #666666);
+        }
+        input {
+            padding: 10px 20px;
+            &::placeholder {
+                opacity: .6;
+                @include font(20px,
+                500,
+                27px,
+                #666666);
+            }
+        }
+        label {
+            margin-right: 20px;
+        }
+        select {
+            padding: 10px 20px;
+            cursor: pointer;
+            @include font(20px,
+            500,
+            27px,
+            rgb(102, 102, 102, 0.6));
+        }
+    }
+    .i-name {
+        top: 84px;
+        right: 145px;
+    }
+    .i-mail {
+        top: 344px;
+        right: 145px;
+    }
+    .i-select {
+        top: 214px;
+        right: 28px;
+    }
+    #send {
+        position: absolute;
+        bottom: -44px;
+        right: 183px;
+        width: 200px;
+        height: 150px;
+        background-color: transparent;
+        cursor: auto;
+        @include flex(row,
+        center,
+        center);
+        svg {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            path {
+                cursor: pointer;
+                transition: .3s;
+            }
+        }
+        .send-title {
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            @include font(20px,
+            500,
+            27px,
+            $COLOR__WHITE);
+        }
+    }
+}

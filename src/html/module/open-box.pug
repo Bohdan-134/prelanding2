@@ -1,4 +1,5 @@
-section.box
+section.box.pt-100
+    h2.h2 Відкрийте свою подарункову коробку:
     .container
         ul.box-list
             li.box-item
@@ -13,5 +14,7 @@ section.box
                 include ../../img/gIft.svg
             li.box-item
                 include ../../img/gIft.svg
-        button#open-box Відкрити коробку
-        span.remainder
+        button#open-box(data-status="false" data-click="0")
+            span.open-box-title Відкрити коробку
+            include ../../img/blot-red.svg
+        span.remainder Залишилось спроб: <strong>0</strong>
